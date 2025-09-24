@@ -1,0 +1,121 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #224399;
+    padding: 10px 20px;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('football-stadium.jpg'); /* Remplacer par une vraie image */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.5em;
+}
+
+/* Section Présentation */
+.presentation {
+    background-color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.presentation h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.presentation p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Actualités Section */
+.actualites {
+    background-color: #fff;
+    padding: 40px 20px;
+}
+
+.actualites h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.actualites-item {
+    margin-bottom: 20px;
+}
+
+.actualites-item h3 {
+    font-size: 1.8em;
+    color: #0056b3;
+}
+
+.actualites-item p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #224399;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
