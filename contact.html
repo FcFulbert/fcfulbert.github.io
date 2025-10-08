@@ -1,100 +1,108 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" itemscope itemtype="https://schema.org/Organization">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FC Fulbert - Accueil</title>
-  <link rel="stylesheet" href="./asset/css/index.css">
-  <!-- Icônes Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <title>Contacter le FC Fulbert : Téléphone, Email Officiel et Adresse du Stade Chartres</title>
+  <meta name="description" content="Retrouvez tous les moyens de contacter le FC Fulbert Chartres. Numéros de téléphone, adresse du stade, email du secrétariat, et formulaire de contact pour l'école de foot et la presse." />
+  <link rel="canonical" href="https://fcfulbert.github.io/contact" />
+  <meta itemprop="logo" content="./assets/images/logoV2.png">
+  <link rel="stylesheet" href="./assets/css/contact.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav>
-    <div class="logo">
-      <img src="./asset/images/logo.png" alt="Logo FC Fulbert">
-      <h1>FC Fulbert</h1>
-    </div>
-    <ul>
-      <li><a href="./index.html">Accueil</a></li>
-      <li><a href="./actualites.html">Actualités</a></li>
-      <li><a href="./equipe.html">Équipe</a></li>
-      <li><a href="./matchs.html">Matchs</a></li>
-      <li><a href="./histoire.html">Histoire</a></li>
-      <li><a href="./contact.html">Contact</a></li>
-    </ul>
+  <h1>Contacter le Football Club Fulbert (FC Fulbert Chartres)</h1>
+
+  <section class="quick-info" aria-label="Informations principales de contact">
+    <p>Téléphone Secrétariat : <a href="tel:+332XXXXXXXX" aria-label="Appeler le secrétariat du FC Fulbert">02 XX XX XX XX</a></p>
+    <p>Email Officiel : <a href="mailto:contact@fc-fulbert.fr">contact@fc-fulbert.fr</a></p>
+    <p>Adresse Postale (Siège) : Stade Municipal, Rue Saint Chéron, 28000 Chartres, France</p>
+    <p>Jours/Heures d'Ouverture : Lundi au Vendredi, 14h00 - 18h00</p>
+  </section>
+
+  <section class="contact-block" aria-label="Coordonnées du secrétariat et du club">
+    <h2>Coordonnées du Secrétariat et du Club</h2>
+    <dl>
+      <dt>Fonction :</dt>
+      <dd>Inscriptions, questions générales, licences, sponsoring léger.</dd>
+      <dt>Téléphone :</dt>
+      <dd><a href="tel:+332XXXXXXXX">02 XX XX XX XX</a></dd>
+      <dt>Email Administratif :</dt>
+      <dd><a href="mailto:contact@fc-fulbert.fr">contact@fc-fulbert.fr</a></dd>
+      <dt>Interlocuteur :</dt>
+      <dd>Marie Dubois, Secrétaire du Club</dd>
+    </dl>
+  </section>
+
+  <section class="contact-block" aria-label="Contact pour l’école de foot et les catégories jeunes">
+    <h2>Contact pour l'École de Foot et les Catégories Jeunes</h2>
+    <dl>
+      <dt>Fonction :</dt>
+      <dd>Essais, inscriptions des mineurs (U6 à U18), horaires d'entraînement.</dd>
+      <dt>Téléphone :</dt>
+      <dd><a href="tel:+332YYYYYYYY">02 YY YY YY YY</a></dd>
+      <dt>Email Jeunes :</dt>
+      <dd><a href="mailto:ecole-de-foot@fc-fulbert.fr">ecole-de-foot@fc-fulbert.fr</a></dd>
+      <dt>Interlocuteur :</dt>
+      <dd>Jean Martin, Responsable de l'École de Foot</dd>
+    </dl>
+  </section>
+
+  <section class="contact-block" aria-label="Demandes de presse, médias et partenariats majeurs">
+    <h2>Demandes de Presse, Médias et Partenariats Majeurs</h2>
+    <dl>
+      <dt>Fonction :</dt>
+      <dd>Accréditations, demandes d'interviews, propositions de sponsoring ou partenariats commerciaux.</dd>
+      <dt>Email Presse :</dt>
+      <dd><a href="mailto:presse@fc-fulbert.fr">presse@fc-fulbert.fr</a></dd>
+      <dt>Email Partenariats :</dt>
+      <dd><a href="mailto:partenariats@fc-fulbert.fr">partenariats@fc-fulbert.fr</a></dd>
+      <dt>Interlocuteur :</dt>
+      <dd>Claire Lefebvre, Responsable Communication/Marketing</dd>
+    </dl>
+  </section>
+
+  <section aria-label="Adresse du stade et plan d’accès">
+    <h2>Adresse du Stade et Plan d'Accès</h2>
+    <p><strong>Nom du Stade :</strong> Stade Municipal de Chartres</p>
+    <p><strong>Adresse :</strong> Rue Saint Chéron, 28000 Chartres, France</p>
+    <iframe aria-label="Carte Google Maps du stade municipal de Chartres" src="https://maps.google.com/maps?q=Rue%20Saint%20Ch%C3%A9ron%2C%2028000%20Chartres&t=&z=16&ie=UTF8&iwloc=&output=embed"></iframe>
+    <p><strong>Informations pratiques :</strong> Accès facile en transports en commun, parking disponible sur place.</p>
+  </section>
+
+  <section aria-label="Formulaire de contact en ligne">
+    <h2>Formulaire de Contact en Ligne</h2>
+    <form class="contact-form" action="#" method="POST" role="form" aria-live="polite" aria-relevant="additions">
+      <label for="nom">Nom *</label>
+      <input type="text" id="nom" name="nom" required aria-required="true" />
+
+      <label for="prenom">Prénom *</label>
+      <input type="text" id="prenom" name="prenom" required aria-required="true" />
+
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required aria-required="true" />
+
+      <label for="objet">Objet *</label>
+      <select id="objet" name="objet" required aria-required="true">
+        <option value="">-- Sélectionnez --</option>
+        <option value="secreteriat">Secrétariat</option>
+        <option value="ecole-de-foot">École de Foot</option>
+        <option value="presse">Presse</option>
+        <option value="autre">Autre</option>
+      </select>
+
+      <label for="message">Message *</label>
+      <textarea id="message" name="message" required aria-required="true" rows="5"></textarea>
+
+      <p class="form-note">Réponse sous 48h ouvrées garantie.</p>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <nav class="internal-links" aria-label="Liens internes utiles">
+    <a href="/fc-fulbert/faq">Consulter notre FAQ</a>
+    <a href="/fc-fulbert/partenaires">Accéder à la page Partenaires</a>
   </nav>
-
-  <!-- Bannière avec image -->
-  <div class="banner">
-    <img src="./asset/images/banniere.jpg" alt="Bannière FC Fulbert">
-    <div class="banner-text">
-      <h1>Bienvenue au FC Fulbert Chartres</h1>
-      <p>Le club de football de votre lycée, passion et esprit d'équipe !</p>
-      <a href = "./equipe.html">
-        <button>Découvrir nos joueurs</button>
-      </a>
-    </div>
-  </div>
-
-  <!-- Infos rapides -->
-  <section>
-    <h2>Infos rapides</h2>
-    <div class="info-grid">
-      <div class="card"><strong>Création :</strong> 1988</div>
-      <div class="card"><strong>Président :</strong> Jean Dupont</div>
-      <div class="card"><strong>Nombre de licenciés :</strong> 120</div>
-      <div class="card"><strong>Stade :</strong> Lycée Fulbert, Chartres</div>
-    </div>
-  </section>
-
-  <!-- Prochains matchs -->
-  <section>
-    <h2>Prochains matchs</h2>
-    <div class="cards-grid">
-      <div class="card"><p><strong>FC Fulbert vs Lycée Victor Hugo</strong><br> Samedi 5 Octobre - 15h00</p></div>
-      <div class="card"><p><strong>FC Fulbert vs Lycée Marceau</strong><br> Samedi 12 Octobre - 17h00</p></div>
-      <div class="card"><p><strong>FC Fulbert vs Lycée Molière</strong><br> Samedi 19 Octobre - 16h30</p></div>
-    </div>
-  </section>
-
-  <!-- Événements -->
-  <section>
-    <h2>Événements</h2>
-    <div class="cards-grid">
-      <div class="card"><p><strong>Tournoi Inter-lycées</strong><br> Novembre 2025</p></div>
-      <div class="card"><p><strong>Soirée du club</strong><br> Décembre 2025</p></div>
-      <div class="card"><p><strong>Stage jeunes</strong><br> Février 2026</p></div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-section">
-        <h3>FC Fulbert</h3>
-        <p><i class="fas fa-location-dot"></i> Lycée Fulbert, Chartres</p>
-        <p><i class="fas fa-envelope"></i> contact@fcfulbert.fr</p>
-        <p><i class="fas fa-phone"></i> 01 23 45 67 89</p>
-      </div>
-      <div class="footer-section">
-        <h3>Réseaux</h3>
-        <p>
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-        </p>
-      </div>
-      <div class="footer-section">
-        <h3>Horaires</h3>
-        <p>Entraînements : <br>Lundi, Mercredi, Vendredi<br>18h00 - 20h00</p>
-        <p>Matchs : <br>Samedi après-midi</p>
-      </div>
-    </div>
-    <p class="footer-bottom">© 2025 FC Fulbert - Tous droits réservés</p>
-  </footer>
 
 </body>
 </html>
