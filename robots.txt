@@ -1,0 +1,8 @@
+# Fichier robots.txt pour le FC Fulbert Chartres (https://fcfulbert.github.io/)
+
+User-agent: *
+
+# Autoriser l'exploration de toutes les pages (par défaut)
+Allow: /
+
+Sitemap: https://fcfulbert.github.io/sitemap.xml
