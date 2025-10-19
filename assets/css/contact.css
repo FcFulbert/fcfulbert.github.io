@@ -1,0 +1,399 @@
+/* Styles spécifiques pour la page contact/inscription */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.contact-card {
+  background: var(--white);
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 6px 25px var(--shadow);
+  transition: all 0.3s ease;
+  border-top: 4px solid var(--accent);
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px var(--shadow-hover);
+  border-top-color: var(--primary);
+}
+
+.contact-card h3 {
+  color: var(--primary);
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.contact-icon {
+  font-size: 2rem;
+}
+
+.contact-card p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.contact-card a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.contact-card a:hover {
+  color: var(--accent);
+}
+
+/* Formulaire d'inscription */
+.inscription-form {
+  background: var(--white);
+  padding: 50px;
+  border-radius: 18px;
+  box-shadow: 0 8px 35px var(--shadow-hover);
+  margin-bottom: 50px;
+  border: 3px solid var(--accent);
+}
+
+.inscription-form h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.form-group label.required::after {
+  content: ' *';
+  color: var(--primary);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(139, 21, 56, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.form-group select {
+  cursor: pointer;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: auto;
+  cursor: pointer;
+}
+
+.checkbox-group label {
+  margin-bottom: 0;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.form-submit {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: var(--white);
+  border: none;
+  padding: 16px 50px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(139, 21, 56, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.form-submit:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 30px rgba(139, 21, 56, 0.5);
+}
+
+.form-submit:active {
+  transform: translateY(-1px);
+}
+
+.form-note {
+  background: #FFF9E6;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 4px solid var(--accent);
+  margin-top: 20px;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+/* Tarifs */
+.tarifs-section {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: var(--white);
+  padding: 50px;
+  border-radius: 18px;
+  margin-bottom: 50px;
+  box-shadow: 0 10px 40px var(--shadow-hover);
+}
+
+.tarifs-section h2 {
+  color: var(--white);
+  padding-left: 0;
+}
+
+.tarifs-section h2::before {
+  display: none;
+}
+
+.tarifs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.tarif-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.tarif-card:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: var(--accent);
+  transform: scale(1.05);
+}
+
+.tarif-card h3 {
+  color: var(--accent);
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.tarif-price {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--white);
+  margin-bottom: 10px;
+  display: block;
+}
+
+.tarif-price span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.tarif-details {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.tarif-details li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.95rem;
+}
+
+.tarif-details li:last-child {
+  border-bottom: none;
+}
+
+.tarif-details li::before {
+  content: '✓ ';
+  color: var(--accent);
+  font-weight: 900;
+  margin-right: 8px;
+}
+
+/* Section avantages */
+.avantages-section {
+  background: var(--white);
+  padding: 50px;
+  border-radius: 18px;
+  box-shadow: 0 6px 25px var(--shadow);
+  margin-bottom: 50px;
+}
+
+.avantages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.avantage-item {
+  text-align: center;
+  padding: 30px 20px;
+  background: var(--light);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.avantage-item:hover {
+  background: var(--white);
+  box-shadow: 0 6px 20px var(--shadow);
+  transform: translateY(-5px);
+}
+
+.avantage-icon {
+  font-size: 4rem;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.avantage-item h4 {
+  color: var(--primary);
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.avantage-item p {
+  color: var(--gray);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Timeline inscription */
+.timeline {
+  position: relative;
+  padding-left: 50px;
+  margin: 40px 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, var(--primary) 0%, var(--accent) 100%);
+}
+
+.timeline-item {
+  position: relative;
+  padding: 20px;
+  margin-bottom: 30px;
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px var(--shadow);
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -38px;
+  top: 25px;
+  width: 20px;
+  height: 20px;
+  background: var(--accent);
+  border: 4px solid var(--white);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--primary);
+}
+
+.timeline-item h4 {
+  color: var(--primary);
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.timeline-item p {
+  color: var(--dark);
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media(max-width: 900px) {
+  .inscription-form,
+  .tarifs-section,
+  .avantages-section {
+    padding: 30px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid,
+  .tarifs-grid,
+  .avantages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline {
+    padding-left: 40px;
+  }
+
+  .timeline::before {
+    left: 15px;
+  }
+
+  .timeline-item::before {
+    left: -33px;
+  }
+}
+
+@media(max-width: 600px) {
+  .tarif-price {
+    font-size: 2.5rem;
+  }
+
+  .form-submit {
+    width: 100%;
+  }
+}
