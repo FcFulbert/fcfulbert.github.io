@@ -1,0 +1,419 @@
+
+.partenaires-intro {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: var(--white);
+  padding: 60px;
+  border-radius: 20px;
+  margin-bottom: 60px;
+  box-shadow: 0 10px 40px var(--shadow-hover);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.partenaires-intro::before {
+  content: '🤝';
+  position: absolute;
+  font-size: 200px;
+  opacity: 0.05;
+  right: -30px;
+  bottom: -50px;
+}
+
+.partenaires-intro h2 {
+  color: var(--white);
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.partenaires-intro h2::before {
+  display: none;
+}
+
+.partenaires-intro p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  opacity: 0.95;
+  position: relative;
+  z-index: 1;
+}
+
+/* Catégories de partenaires */
+.category-section {
+  margin-bottom: 70px;
+}
+
+.category-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.category-badge {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--navy);
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-weight: 800;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.category-title {
+  font-size: 2.5rem;
+  color: var(--primary);
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.category-description {
+  font-size: 1.1rem;
+  color: var(--gray);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Grille partenaires */
+.partenaires-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.partenaire-card {
+  background: var(--white);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 25px var(--shadow);
+  transition: all 0.4s ease;
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.partenaire-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 45px var(--shadow-hover);
+  border-color: var(--accent);
+}
+
+.partenaire-logo-container {
+  background: linear-gradient(135deg, var(--light) 0%, var(--white) 100%);
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.partenaire-logo-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.02) 100%);
+}
+
+.partenaire-logo-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.partenaire-level {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: var(--accent);
+  color: var(--navy);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.partenaire-content {
+  padding: 25px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.partenaire-name {
+  font-size: 1.5rem;
+  color: var(--primary);
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.partenaire-type {
+  color: var(--gray);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.partenaire-description {
+  color: var(--dark);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  flex: 1;
+}
+
+.partenaire-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  border-top: 2px solid var(--light);
+}
+
+.partenaire-since {
+  font-size: 0.85rem;
+  color: var(--gray);
+  font-weight: 600;
+}
+
+.partenaire-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.partenaire-link:hover {
+  color: var(--accent);
+  transform: translateX(5px);
+}
+
+/* Partenaires Premium - Design spécial */
+.partenaires-premium {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.partenaire-premium-card {
+  background: linear-gradient(135deg, var(--accent-dark) 0%, var(--accent) 100%);
+  color: var(--navy);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(212, 175, 55, 0.3);
+  transition: all 0.4s ease;
+  border: 3px solid var(--accent);
+}
+
+.partenaire-premium-card:hover {
+  transform: translateY(-15px) scale(1.02);
+  box-shadow: 0 20px 60px rgba(212, 175, 55, 0.5);
+}
+
+.premium-logo-container {
+  background: var(--white);
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.premium-content {
+  padding: 35px;
+}
+
+.premium-name {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.premium-type {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.premium-description {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.premium-benefits {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.premium-benefits ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.premium-benefits li {
+  padding: 8px 0;
+  font-size: 0.95rem;
+}
+
+.premium-benefits li::before {
+  content: '✓ ';
+  font-weight: 900;
+  margin-right: 8px;
+}
+
+/* Section devenir partenaire */
+.devenir-partenaire {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--primary-dark) 100%);
+  color: var(--white);
+  padding: 60px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 70px 0;
+  box-shadow: 0 10px 40px var(--shadow-hover);
+}
+
+.devenir-partenaire h2 {
+  color: var(--white);
+  font-size: 2.8rem;
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+.devenir-partenaire h2::before {
+  display: none;
+}
+
+.devenir-partenaire p {
+  font-size: 1.2rem;
+  line-height: 1.9;
+  margin-bottom: 30px;
+  opacity: 0.95;
+}
+
+.devenir-partenaire .cta-button {
+  background: var(--accent);
+  color: var(--navy);
+  padding: 18px 50px;
+  font-size: 1.3rem;
+  box-shadow: 0 6px 25px rgba(212, 175, 55, 0.4);
+}
+
+.devenir-partenaire .cta-button:hover {
+  transform: translateY(-3px) scale(1.08);
+  box-shadow: 0 12px 40px rgba(212, 175, 55, 0.6);
+}
+
+/* Avantages partenaires */
+.avantages-section {
+  background: var(--white);
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 8px 35px var(--shadow);
+  margin: 60px 0;
+}
+
+.avantages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.avantage-card {
+  text-align: center;
+  padding: 35px 25px;
+  background: var(--light);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.avantage-card:hover {
+  background: var(--white);
+  box-shadow: 0 8px 25px var(--shadow);
+  transform: translateY(-5px);
+  border-color: var(--accent);
+}
+
+.avantage-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.avantage-card h3 {
+  color: var(--primary);
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.avantage-card p {
+  color: var(--gray);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media(max-width: 900px) {
+  .partenaires-intro,
+  .devenir-partenaire,
+  .avantages-section {
+    padding: 40px 30px;
+  }
+
+  .partenaires-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .partenaires-premium {
+    grid-template-columns: 1fr;
+  }
+
+  .category-title {
+    font-size: 2rem;
+  }
+}
+
+@media(max-width: 600px) {
+  .partenaires-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .avantages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .partenaire-footer {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}
